@@ -1,8 +1,8 @@
-const express = require('express')
-const app = express()
- 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
- 
-app.listen(8080)
+import app from './src/app/index';
+
+
+app.listen(8080,() =>{
+
+console.log('server running on port 8080');
+
+});
